@@ -12,7 +12,7 @@ public class Validator {
         return Pattern.matches(FIRST_NAME_PATTERN, firstName);
     }
 
-    /* Validating last name with pattern */
+    /* Validating last name with pattern*/
     public boolean validateLastName(String lastName) {
         return Pattern.matches(LAST_NAME_PATTERN, lastName);
     }

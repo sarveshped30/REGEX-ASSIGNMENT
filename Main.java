@@ -1,6 +1,6 @@
 /* User registration using regex
  * RFP assignment
- * Author: Sarvesh Pednekar */
+ * Author: Sarvesh Suryakant Pednekar */
 
 package com.bridgelabs.userRegistration;
 
