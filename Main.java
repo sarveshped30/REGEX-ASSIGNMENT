@@ -1,3 +1,7 @@
+/* User registration using regex
+ * RFP assignment
+ * Author: Sarvesh Pednekar */
+
 package com.bridgelabs.userRegistration;
 
 import org.apache.log4j.BasicConfigurator;
@@ -5,19 +9,24 @@ import org.apache.log4j.Logger;
 
 import java.util.Scanner;
 
+/* Creating user class for storing names in variables using setters */
 class User {
     private String firstName;
     private String lastName;
 
+    /* Creating object for validator class */
     Validator validate = new Validator();
+
+    /* Creating Getters and Setters */
 
     public String getFirstName() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
+        // Checking if user input matches the pattern
         if(validate.validateFirstName(firstName)) {
-            this.firstName = firstName;
+            this.firstName = firstName;     // Assigning value to firstName
             System.out.println("Valid");
         } else {
             System.out.println("Invalid pattern for first name");
@@ -29,8 +38,12 @@ class User {
     }
 
     public void setLastName(String lastName) {
+        // Checking if user input matches the pattern
         if(validate.validateLastName(lastName)) {
-            this.lastName = lastName;
+            this.lastName = lastName;       // Assigning value to lastName
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid pattern for Last name");
         }
     }
 }
